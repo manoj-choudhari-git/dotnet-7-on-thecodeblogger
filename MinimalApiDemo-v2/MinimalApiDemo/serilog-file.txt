@@ -1,0 +1,130 @@
+2022-09-24 18:28:01.263 +02:00 [INF] application instance created
+2022-09-24 18:28:01.351 +02:00 [INF] request pipeline has been configured
+2022-09-24 18:28:01.359 +02:00 [INF] Apis have been registered
+2022-09-24 18:28:02.043 +02:00 [INF] Now listening on: https://localhost:7130
+2022-09-24 18:28:02.044 +02:00 [INF] Now listening on: http://localhost:5082
+2022-09-24 18:28:02.044 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-24 18:28:02.045 +02:00 [INF] Hosting environment: Development
+2022-09-24 18:28:02.045 +02:00 [INF] Content root path: C:\Users\manoj\source\repos\MinimalApiDemo\MinimalApiDemo
+2022-09-24 18:28:03.039 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/index.html - -
+2022-09-24 18:28:03.775 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - -
+2022-09-24 18:28:03.775 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_vs/browserLink - -
+2022-09-24 18:28:03.839 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/index.html - - - 200 - text/html;charset=utf-8 769.0120ms
+2022-09-24 18:28:03.844 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 69.2810ms
+2022-09-24 18:28:04.078 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 302.8431ms
+2022-09-24 18:28:04.130 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - -
+2022-09-24 18:28:04.137 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2022-09-24 18:28:04.388 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 257.9859ms
+2022-09-24 18:29:01.356 +02:00 [INF] application instance created
+2022-09-24 18:29:01.403 +02:00 [INF] request pipeline has been configured
+2022-09-24 18:29:01.410 +02:00 [INF] Apis have been registered
+2022-09-24 18:29:01.880 +02:00 [INF] Now listening on: https://localhost:7130
+2022-09-24 18:29:01.881 +02:00 [INF] Now listening on: http://localhost:5082
+2022-09-24 18:29:01.881 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-24 18:29:01.882 +02:00 [INF] Hosting environment: Development
+2022-09-24 18:29:01.882 +02:00 [INF] Content root path: C:\Users\manoj\source\repos\MinimalApiDemo\MinimalApiDemo
+2022-09-24 18:29:03.062 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/index.html - -
+2022-09-24 18:29:03.645 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/index.html - - - 200 - text/html;charset=utf-8 588.8686ms
+2022-09-24 18:29:03.648 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - -
+2022-09-24 18:29:03.648 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_vs/browserLink - -
+2022-09-24 18:29:03.665 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 16.6783ms
+2022-09-24 18:29:03.705 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.3986ms
+2022-09-24 18:29:03.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - -
+2022-09-24 18:29:03.798 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2022-09-24 18:29:03.950 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.4408ms
+2022-09-24 18:29:16.262 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/students - -
+2022-09-24 18:29:16.290 +02:00 [INF] Executing endpoint 'HTTP: GET /students'
+2022-09-24 18:29:19.329 +02:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[CreatedOn], [s].[FirstName], [s].[LastName]
+FROM [Students] AS [s]
+2022-09-24 18:29:19.416 +02:00 [INF] Executed endpoint 'HTTP: GET /students'
+2022-09-24 18:29:19.423 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/students - - - 200 - application/json;+charset=utf-8 3161.8126ms
+2022-09-24 18:30:48.558 +02:00 [INF] application instance created
+2022-09-24 18:30:48.627 +02:00 [INF] request pipeline has been configured
+2022-09-24 18:30:48.637 +02:00 [INF] Apis have been registered
+2022-09-24 18:30:49.038 +02:00 [INF] Now listening on: https://localhost:7130
+2022-09-24 18:30:49.041 +02:00 [INF] Now listening on: http://localhost:5082
+2022-09-24 18:30:49.043 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-24 18:30:49.046 +02:00 [INF] Hosting environment: Development
+2022-09-24 18:30:49.048 +02:00 [INF] Content root path: C:\Users\manoj\source\repos\MinimalApiDemo\MinimalApiDemo
+2022-09-24 18:30:49.766 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/index.html - -
+2022-09-24 18:30:50.175 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/index.html - - - 200 - text/html;charset=utf-8 409.3586ms
+2022-09-24 18:30:50.180 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - -
+2022-09-24 18:30:50.180 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_vs/browserLink - -
+2022-09-24 18:30:50.207 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 26.4966ms
+2022-09-24 18:30:50.249 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 68.8480ms
+2022-09-24 18:30:50.334 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - -
+2022-09-24 18:30:50.342 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2022-09-24 18:30:50.515 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 181.6610ms
+2022-09-24 18:30:54.469 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/students - -
+2022-09-24 18:30:54.484 +02:00 [INF] Executing endpoint 'HTTP: GET /students'
+2022-09-24 18:30:55.554 +02:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[CreatedOn], [s].[FirstName], [s].[LastName]
+FROM [Students] AS [s]
+2022-09-24 18:30:55.630 +02:00 [INF] Executed endpoint 'HTTP: GET /students'
+2022-09-24 18:30:55.640 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/students - - - 200 - application/json;+charset=utf-8 1171.0957ms
+2022-09-24 18:56:59.809 +02:00 [INF] application instance created
+2022-09-24 18:56:59.863 +02:00 [INF] request pipeline has been configured
+2022-09-24 18:56:59.871 +02:00 [INF] Apis have been registered
+2022-09-24 18:57:00.211 +02:00 [INF] Now listening on: https://localhost:7130
+2022-09-24 18:57:00.214 +02:00 [INF] Now listening on: http://localhost:5082
+2022-09-24 18:57:00.215 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-24 18:57:00.216 +02:00 [INF] Hosting environment: Development
+2022-09-24 18:57:00.217 +02:00 [INF] Content root path: C:\Users\manoj\source\repos\MinimalApiDemo\MinimalApiDemo
+2022-09-24 18:57:01.409 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/index.html - -
+2022-09-24 18:57:02.058 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_vs/browserLink - -
+2022-09-24 18:57:02.058 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - -
+2022-09-24 18:57:02.079 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/index.html - - - 200 - text/html;charset=utf-8 673.9725ms
+2022-09-24 18:57:02.080 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 22.3952ms
+2022-09-24 18:57:02.114 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.5690ms
+2022-09-24 18:57:02.197 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - -
+2022-09-24 18:57:02.204 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2022-09-24 18:57:02.334 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.9289ms
+2022-09-25 11:43:12.461 +02:00 [INF] application instance created
+2022-09-25 11:43:12.579 +02:00 [INF] request pipeline has been configured
+2022-09-25 11:43:12.588 +02:00 [INF] Apis have been registered
+2022-09-25 11:43:13.189 +02:00 [INF] Now listening on: https://localhost:7130
+2022-09-25 11:43:13.192 +02:00 [INF] Now listening on: http://localhost:5082
+2022-09-25 11:43:13.193 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-25 11:43:13.194 +02:00 [INF] Hosting environment: Development
+2022-09-25 11:43:13.196 +02:00 [INF] Content root path: C:\Users\manoj\source\repos\MinimalApiDemo\MinimalApiDemo
+2022-09-25 11:43:14.631 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/index.html - -
+2022-09-25 11:43:15.228 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - -
+2022-09-25 11:43:15.228 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_vs/browserLink - -
+2022-09-25 11:43:15.233 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/index.html - - - 200 - text/html;charset=utf-8 603.2036ms
+2022-09-25 11:43:15.246 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 17.9352ms
+2022-09-25 11:43:15.282 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.2123ms
+2022-09-25 11:43:15.363 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - -
+2022-09-25 11:43:15.371 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2022-09-25 11:43:15.620 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 257.9149ms
+2022-09-25 11:43:22.094 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/students - -
+2022-09-25 11:43:22.124 +02:00 [INF] Executing endpoint 'HTTP: GET /students'
+2022-09-25 11:43:25.290 +02:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[CreatedOn], [s].[FirstName], [s].[LastName]
+FROM [Students] AS [s]
+2022-09-25 11:43:25.400 +02:00 [INF] Executed endpoint 'HTTP: GET /students'
+2022-09-25 11:43:25.415 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/students - - - 200 - application/json;+charset=utf-8 3321.1602ms
+2022-09-26 18:17:44.182 +02:00 [INF] application instance created
+2022-09-26 18:17:44.581 +02:00 [INF] request pipeline has been configured
+2022-09-26 18:17:44.619 +02:00 [INF] Apis have been registered
+2022-09-26 18:17:46.552 +02:00 [INF] Now listening on: https://localhost:7130
+2022-09-26 18:17:46.558 +02:00 [INF] Now listening on: http://localhost:5082
+2022-09-26 18:17:46.560 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-26 18:17:46.564 +02:00 [INF] Hosting environment: Development
+2022-09-26 18:17:46.566 +02:00 [INF] Content root path: C:\Users\manoj\source\repos\MinimalApiDemo\MinimalApiDemo
+2022-09-26 18:17:49.467 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/index.html - -
+2022-09-26 18:17:51.325 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - -
+2022-09-26 18:17:51.325 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/_vs/browserLink - -
+2022-09-26 18:17:51.415 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/index.html - - - 200 - text/html;charset=utf-8 1956.4048ms
+2022-09-26 18:17:51.415 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 90.2580ms
+2022-09-26 18:17:51.523 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 208.8345ms
+2022-09-26 18:17:51.694 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - -
+2022-09-26 18:17:51.710 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2022-09-26 18:17:52.468 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 774.5819ms
+2022-09-26 18:18:00.042 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7130/students - -
+2022-09-26 18:18:00.170 +02:00 [INF] Executing endpoint 'HTTP: GET /students'
+2022-09-26 18:18:15.692 +02:00 [INF] Executed DbCommand (464ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[CreatedOn], [s].[FirstName], [s].[LastName]
+FROM [Students] AS [s]
+2022-09-26 18:18:16.040 +02:00 [INF] Executed endpoint 'HTTP: GET /students'
+2022-09-26 18:18:16.065 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7130/students - - - 200 - application/json;+charset=utf-8 16022.7826ms

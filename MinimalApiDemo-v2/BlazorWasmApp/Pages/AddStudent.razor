@@ -1,0 +1,58 @@
+﻿@page "/add-student"
+@using BlazorWasmApp.Models
+@using BlazorWasmApp.Services
+@inject StudentsApiClient client
+
+<h3>Add New Student</h3>
+
+<EditForm Model="@studentModel" OnValidSubmit="@HandleValidSubmit">
+    <!-- To Attach the validations (data annotations) to the form controls -->
+    <DataAnnotationsValidator />
+
+    <!-- To show comprehensive summary of all errors in the form -->
+    @*<ValidationSummary />*@
+
+
+    <div class="form-group mt-2">
+        <label for="first-name">First Name</label>
+        <InputText id="first-name" class="form-control" @bind-Value="studentModel.FirstName" />
+        <ValidationMessage For="() => studentModel.FirstName" />
+    </div>
+
+    <div class="form-group mt-2">
+        <label for="last-name">Last Name</label>
+        <InputText id="last-name" class="form-control" @bind-Value="studentModel.LastName"
+            DisplayName="last name"/>
+        <ValidationMessage For="() => studentModel.LastName" />
+    </div>
+
+
+    <div class="form-group mt-2">
+        <label for="address">Address</label>
+        <InputText id="address" class="form-control" @bind-Value="studentModel.Address" 
+            />
+        <ValidationMessage For="() => studentModel.Address" />
+    </div>
+
+    @*<div class="form-group mt-2">
+        <label for="last-name">Created On</label>
+        <InputDate id="created-on" class="form-control" @bind-Value="studentModel.CreatedOn"
+                   DisplayName="Created On"
+                   ParsingErrorMessage="Please provide a valid date."/>
+        <ValidationMessage For="() => studentModel.LastName" />
+    </div>*@
+
+    <div class="mt-5">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+    private Student studentModel = new();
+    
+    private async Task HandleValidSubmit()
+    {
+        studentModel.CreatedOn = DateTime.Now;
+        await client.AddStudent(studentModel);
+    }
+}
