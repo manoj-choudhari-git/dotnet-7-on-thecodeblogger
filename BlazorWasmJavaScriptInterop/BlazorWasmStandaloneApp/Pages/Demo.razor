@@ -1,0 +1,79 @@
+﻿@page "/demo"
+@inject IJSRuntime JS
+@implements IDisposable
+
+<h3>Call JavaScript From .NET</h3>
+
+<h5>Get Returned Value in .NET</h5>
+<p>x = @x, y = @y, x + y = @sum</p>
+<button class="btn btn-primary" @onclick="@(async () => await GetResultsFromJavaScriptFunction())"> Call JavaScript And Get Result </button>
+<hr />
+
+<h5>Call JavaScript void function</h5>
+<button class="btn btn-primary" @onclick="DisplayJavaScriptAlert"> Show Alert </button>
+<hr />
+
+<h3>Call .NET from JavaScript</h3>
+<p> This button will call a static method and will display the result in an alert.</p>
+<button class="btn btn-primary" onclick="callDotNetMethod()"> Call .NET Static Method From JavaScript </button>
+
+<hr />
+<p> This button will call an instance method.</p>
+
+<ol>
+    <li>C# code creates the instance and passes it to a JavaScript function by inoking it from .NET</li>
+    <li>Then JavaScript function uses that instance to call an C# instance method from JavaScript</li>
+    <li>Then JavaScript function returns the result to the caller .NET method</li>
+</ol>
+<button class="btn btn-primary" @onclick="(async () => await PassInstanceByReference())"> Pass .NET Object Reference to JavaScript </button>
+<button class="btn btn-primary" onclick="showWelcomeMessage()"> Call .NET Method from JavaScript </button>
+<hr />
+@code {
+    private Random r = new();
+    private int x, y, sum;
+    DotNetObjectReference<Demo>? objRef;
+
+    private async Task DisplayJavaScriptAlert()
+    {
+        var productName = "Some Product";
+        var price = r.Next(1, 101);
+        // Function name, followed by params required for that function
+        await JS.InvokeVoidAsync("displayPrice", productName, price);
+    }
+
+
+    public async Task PassInstanceByReference()
+    {
+        // Wrap current instance (or any instance) inside DotNetObjectReference
+        objRef = DotNetObjectReference.Create(this);
+
+        // Pass it to JavaScript
+        await JS.InvokeAsync<string>("setDotNetObjectReference", objRef);
+    }
+
+    [JSInvokable]
+    public string GetWelcomeMessage()
+    {
+        return "Welcome Message From .NET";
+    }
+
+    private async Task<int> GetResultsFromJavaScriptFunction()
+    {
+        x = r.Next(1, 101);
+        y = r.Next(1, 101);
+        // Function name, followed by params required for that function
+        sum = await JS.InvokeAsync<int>("getSum", x, y);
+        return sum;
+    }
+
+    [JSInvokable]
+    public static int Multiply(int x, int y)
+    {
+        return x * y;
+    }
+
+    public void Dispose()
+    {
+        objRef?.Dispose();
+    }
+}
