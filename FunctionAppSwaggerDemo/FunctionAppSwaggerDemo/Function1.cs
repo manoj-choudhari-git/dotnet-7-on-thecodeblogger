@@ -16,10 +16,12 @@ namespace FunctionAppSwaggerDemo
     public class Function1
     {
         private readonly ILogger<Function1> _logger;
+        private readonly IMyService myService;
 
-        public Function1(ILogger<Function1> log)
+        public Function1(ILogger<Function1> log, IMyService myService)
         {
             _logger = log;
+            this.myService = myService;
         }
 
         [FunctionName("Function1")]
@@ -42,6 +44,7 @@ namespace FunctionAppSwaggerDemo
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
                 : $"Hello, {name}. This HTTP triggered function executed successfully.";
 
+            this.myService.Log("Logging Via MyService Method");
             return new OkObjectResult(responseMessage);
         }
     }
